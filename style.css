@@ -525,10 +525,15 @@ footer .copyright {
   color: #fff;
 }
 /* -------pagination---------------- */
-#pagination {
+#shop-pagination {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  display: flex;
+  gap: 3px;
+  list-style: none;
 }
-#pagination a {
+#shop-pagination li {
   text-decoration: none;
   background-color: #088178;
   padding: 15px 20px;
@@ -536,7 +541,37 @@ footer .copyright {
   color: #fff;
   font-weight: 600;
 }
-#pagination a i {
+#shop-pagination li i {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* ----------------------------blog pagination---------------------- */
+#pagination {
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+  display: flex;
+  gap: 3px;
+  list-style: none;
+}
+#pagination li {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+#pagination .active{
+  text-decoration: none;
+  background-color:transparent;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color:  #088178;
+  font-weight: 600;
+  border: 2px solid  #088178;
+}
+#pagination li i {
   font-size: 16px;
   font-weight: 600;
 }
@@ -654,6 +689,7 @@ footer .copyright {
   background-image: url(img/about/banner.png);
 }
 #about-head {
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -882,9 +918,7 @@ padding: 30px;
   font-size: 13px;
 }
 #cart-add{
-  /* border-bottom: 1px solid #e2e9e1; */
-
-
+  border-bottom: 1px solid #e2e9e1;
 
 }
  #footer-color{
@@ -1032,7 +1066,23 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-image: url(img2/photo_1_2023-09-03_16-29-22.jpg);
 }
 
-  /* ----------- */
+  /* -------------------- */
+  #about-head {
+    display: flex;
+    flex-direction: column;
+
+}
+#about-head img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#about-head div {
+  padding-left: 0px;
+}
+#about-app .video {
+  width: 100%;
+ 
+}
   #newsletter .form {
     width: 70%;
   }
@@ -1203,6 +1253,15 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 100%;
  
 }
+#feature{
+  align-items: center;
+  justify-content: center;
+}
+#feature .fe-box {
+  width: 200px;
+  margin: 0 0 15px 0;
+}
+
 /* --------------contact bage------------------ */
 #contact-details {
   display: flex;
